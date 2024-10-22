@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.png">
+    <title>Contate-nos!</title>
+    <script>
+        function dados(){
+            var nome_val = document.getElementById('inputName').value;
+            var email_val = document.getElementById('inputEmail4').value;
+
+            if(nome_val == "" || email_val == ""){
+                alert("Preencha os campos");
+            }else{
+                alert("Obrigado " + nome_val + " pelo feedback!");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="navbar navbar-light bg-transparent">
+        <a class="navbar-brand" href="index.html"> 
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Olimpíadas 2024 </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="modalidades.html">Modalidades</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="medalhas.html">Medalhas</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+<!--vai se fuder murilo, nn sabe back-end -->
+    <hr>
+
+    <form class="container" action="index.html" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Nome(Obrigatório)</label>
+            <input type="text" name="nome" class="form-control" required id="inputName" placeholder="Lucas Serafim">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email(Obrigatório)</label></label>
+            <input type="email" name="email" class="form-control"  required id="inputEmail4" placeholder="Lucas567@gmail.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputReason">Motivo de contato</label>
+          <input type="text" class="form-control" id="inputReason" placeholder="Achei poggers">
+        </div>
+        <div class="form-group">
+            <label for="inputText">Feedback</label>
+            <textarea name="textarea" id="inputText" placeholder="Deixe seu feedback!" style="padding: .375rem .75rem; border-radius: .25rem; resize: none; width: 100%;"></textarea>
+        </div>
+        <!--O FILHO DA PUTA QUE CRIOU ESSA MERDA DESSE FORMSUBMIT MERECE TUDO DE RUIM MUNDO, PQ A PORRA DO BGLH TÁ DANDO PROBLEMA NO METODO POST, MAS ESTÁ COM METHOD POST ATÉ NO MEU CU, EU NN AGUENTO MAIS O MESMO ERRO TODA HORA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH-->
+        
+        <div class="text-center">
+            <button class="btn_form"  onclick="dados()">Enviar</button>
+        </div>
+      </form>
+
+    <hr>
+
+    <div class="footer"> <br>
+        <div class="ancora">
+            <a href="#top"> <img src="img/ancora.png"> </a>
+        </div>
+        <p>Murilo Machi & Vinícius Silva - &copyTodos os direitos reservados</p>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
